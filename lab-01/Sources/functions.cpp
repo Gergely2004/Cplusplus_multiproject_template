@@ -71,15 +71,15 @@ void selection_sort(int *a, int n) {
 }
 
 void minimselection_sort(int *a, int n) {
-    int min_i;
+    int min_index;
     for(int i = 0 ; i < n; ++i) {
-        min_i = i;
+        min_index = i;
         for(int j = i + 1; j < n - 1; ++j) {
-            if(a[j] < a[min_i])
-                min_i = j;
+            if(a[j] < a[min_index])
+                min_index = j;
         }
-        if(min_i != i)
-            swap(a[min_i], a[i]);
+        if(min_index != i)
+            swap(a[min_index], a[i]);
     }
 }
 
