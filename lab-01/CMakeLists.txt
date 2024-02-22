@@ -3,4 +3,7 @@ project(lab_01)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(lab_01 main.cpp)
+add_executable(lab_01 main.cpp
+        Headers/functions.h
+        Sources/functions.cpp)
+include_directories(Headers)
