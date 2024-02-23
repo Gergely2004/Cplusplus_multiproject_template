@@ -2,13 +2,13 @@
 #include "functions.h"
 
 int lnko(int a, int b) {
-    int r;
+    int m;
     while(a != 0) {
-        r = a % b;
+        m = a % b;
         a = b;
-        b = r;
+        b = m;
     }
-    return r;
+    return m;
 }
 
 int lkkt(int a, int b) {
