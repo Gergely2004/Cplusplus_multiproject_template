@@ -13,7 +13,7 @@ int lnko(int a, int b);
 int lkkt(int a, int b);
 int power(int b, int e);
 
-//array
+//arrays
 void read_array(int *a, int n);//void read(int *&array, int &n, ifstream &f);
 void print_array(int *a, int n);
 int linearSearch(int *array, int size, int target);
