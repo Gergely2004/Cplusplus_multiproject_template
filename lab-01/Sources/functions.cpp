@@ -155,3 +155,22 @@ int inverseNumber(int n, int fn) {
         return inverseNumber(n / 10, fn);
     }
 }
+int sumOfNumberDigits(int x) {
+    int sum = 0;
+    while(x) {
+        sum += x % 10;
+        x /= 10;
+    }
+    return sum;
+}
+
+int sum(int *array, int n) {
+    int finalSum = 0;
+    for(int i = 0; i < n; ++i) {
+        if(array[i] % sumOfNumberDigits(array[i]) == 0) {
+            finalSum += array[i];
+        }
+    }
+    return finalSum;
+}
+

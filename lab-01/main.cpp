@@ -151,6 +151,15 @@ int main() {
             invn = inverseNumber(n, invn);
             printf("A szam forditottja: %i", invn);
         }
+        case 21: {
+            int n, total;
+            printf("Olvasd be a tomb hosszat: ");
+            scanf("%i", &n);
+            int a[n];
+            read_array(a, n);
+            total = sum(a, n);
+            printf("A tomb azon elemeinek osszege amelyek oszthatoak szamjegyeik osszegevel: %i", total);
+        }
     }
     return 0;
 }

@@ -35,3 +35,5 @@ int maxArrayRec(int *a, int n, int max);
 int lnkoArrayRec(int *a, int n);
 void digitNumbers(int n);
 int inverseNumber(int n, int fn);
+int sumOfNumberDigits(int x);
+int sum(int *array, int n); //elemek amelyek oszthatoak a szamjegyeinek osszegevel
