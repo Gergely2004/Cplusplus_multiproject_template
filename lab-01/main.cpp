@@ -111,7 +111,7 @@ int main() {
             printf("Olvasd be a tomb hosszat: ");
             scanf("%i", &n);
             int a[n];
-            //readArrayRec(a, n, f);
+            readArrayRec(a, n, f);
             printArrayRec(a, n);
             break;
         }
