@@ -23,8 +23,8 @@ void readArrayRec(int *a, int n, ifstream &f) {
 }
 
 void printArrayRec(int *a, int n) {
-    if(n > 0) printArrayRec(a, n - 1);
-    cout << a[n - 1];
+    if(n > 1) printArrayRec(a, n - 1);
+    cout << a[n - 1] << " ";
 }
 
 int sumArrayRec(int *a, int n) {
