@@ -119,24 +119,24 @@ int maxindex(int *a, int i, int j) {
     }
 }
 
-int partition(int *a, int i, int j) {
+int partition(int *a, int i, int j){
     int l = i;
     int r = j;
     int pivot = a[l];
-    while(i < j) {
-        do {
-            i++;
-        }while(a[i] <= pivot);
+    while(i < j){
         do{
-            j--;
-        } while (a[j] > pivot);
-        if(i < j) swap(a[i], a[j]);
+            i ++;
+        }while(a[i] <= pivot);
+        do {
+            j --;
+        }while(a[j] > pivot);
+        if(i < j) std::swap(a[i], a[j]);
     }
-    swap(a[j], a[l]);
+    std::swap(a[j], a[l]);
     return j;
 }
 
-void quickSort(int *a, int i, int j) {
+void quickSort(int *a, int i, int j){
     if(i == j) return;
     if(i < j) {
         int k = partition(a, i, j);
@@ -144,4 +144,3 @@ void quickSort(int *a, int i, int j) {
         quickSort(a, k + 1, j);
     }
 }
-
