@@ -3,4 +3,6 @@ project(lab_09)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(lab_09 main.cpp)
+add_executable(lab_09 main.cpp
+        functions.h
+        functions.cpp)
